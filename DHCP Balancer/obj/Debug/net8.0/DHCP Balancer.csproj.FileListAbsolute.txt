@@ -1,0 +1,5 @@
+C:\Users\Rodrigo\Documents\GitHub\DHCP Balancer\DHCP Balancer\obj\Debug\net8.0\DHCP Balancer.csproj.AssemblyReference.cache
+C:\Users\Rodrigo\Documents\GitHub\DHCP Balancer\DHCP Balancer\obj\Debug\net8.0\DHCP Balancer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rodrigo\Documents\GitHub\DHCP Balancer\DHCP Balancer\obj\Debug\net8.0\DHCP Balancer.AssemblyInfoInputs.cache
+C:\Users\Rodrigo\Documents\GitHub\DHCP Balancer\DHCP Balancer\obj\Debug\net8.0\DHCP Balancer.AssemblyInfo.cs
+C:\Users\Rodrigo\Documents\GitHub\DHCP Balancer\DHCP Balancer\obj\Debug\net8.0\DHCP Balancer.csproj.CoreCompileInputs.cache
