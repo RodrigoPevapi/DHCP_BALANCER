@@ -10,15 +10,14 @@ class Program
     {
         public string Id { get; set; }
         public string Gateway { get; set; }
-        public List<Reservation> Reservations { get; set; }
     }
 
-    class Reservation
+    class DhcpReservation
     {
-        public string IpAddress { get; set; }
-        public string MacAddress { get; set; }
-        public string Name { get; set; }
-        public string Description { get; set; }
+        public string ScopeId { get; set; }
+        public string ClientId { get; set; } 
+        public string IpAddress { get; set; } 
+        public string Gateway { get; set; }
     }
 
     static void Main()
@@ -29,54 +28,78 @@ class Program
             .Build();
 
         var scopes = config.GetSection("DhcpSettings:Scopes").Get<List<DhcpScope>>();
+        var reservations = config.GetSection("DhcpSettings:Reservations").Get<List<DhcpReservation>>();
+
+        Console.WriteLine("Select the operation you wish to perform:");
+        Console.WriteLine("1. Update the gateway for each scope based on appsettings.json");
+        Console.WriteLine("2. Modify the gateways for reservations individually");
+        Console.Write("Enter your choice (1 or 2): ");
+
+        var option = Console.ReadLine();
 
         using (PowerShell psInstance = PowerShell.Create())
         {
             psInstance.AddScript("Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process -Force");
             psInstance.AddScript("Import-Module DhcpServer");
 
-            foreach (var scope in scopes)
+            switch (option)
             {
-                if (!string.IsNullOrEmpty(scope.Gateway))
-                {
-                    psInstance.AddScript($"Set-DhcpServerv4OptionValue -ScopeId {scope.Id} -OptionId 3 -Value {scope.Gateway}");
-                }
-
-                if (scope.Reservations != null && scope.Reservations.Count > 0)
-                {
-                    foreach (var reservation in scope.Reservations)
-                    {
-                        psInstance.AddScript($"Add-DhcpServerv4Reservation -ScopeId {scope.Id} -IPAddress {reservation.IpAddress} -ClientId {reservation.MacAddress} -Description '{reservation.Description}' -Name '{reservation.Name}' -ErrorAction SilentlyContinue");
-                    }
-                }
+                case "1":
+                    UpdateGatewaysForScopes(psInstance, scopes);
+                    break;
+                case "2":
+                    UpdateReservationsGateways(psInstance, reservations);
+                    break;
+                default:
+                    Console.WriteLine("Invalid option.");
+                    break;
             }
 
-            try
-            {
-                var results = psInstance.Invoke();
+            ExecutePowerShellCommands(psInstance);
+        }
 
-                if (psInstance.HadErrors)
-                {
-                    Console.WriteLine("Error while importing DhcpServer module or updating scope and reservation settings.");
-                    foreach (var error in psInstance.Streams.Error)
-                    {
-                        Console.WriteLine(error.Exception.Message);
-                    }
-                }
-                else
-                {
-                    Console.WriteLine("Scope and reservation settings updated successfully.");
-                }
-            }
-            catch (Exception e)
+        PromptToExit();
+    }
+
+    static void UpdateGatewaysForScopes(PowerShell ps, List<DhcpScope> scopes)
+    {
+        foreach (var scope in scopes)
+        {
+            ps.AddScript($"Set-DhcpServerv4OptionValue -ScopeId {scope.Id} -OptionId 3 -Value {scope.Gateway}");
+        }
+    }
+
+    static void UpdateReservationsGateways(PowerShell ps, List<DhcpReservation> reservations)
+    {
+        foreach (var reservation in reservations)
+        {
+            string cmdSetGatewayOption = $"Set-DhcpServerv4OptionValue -IPAddress '{reservation.IpAddress}' -OptionId 3 -Value '{reservation.Gateway}'";
+            ps.AddScript(cmdSetGatewayOption);
+        }
+    }
+
+
+    static void ExecutePowerShellCommands(PowerShell ps)
+    {
+        var results = ps.Invoke();
+
+        if (ps.HadErrors)
+        {
+            Console.WriteLine("Error while executing commands.");
+            foreach (var error in ps.Streams.Error)
             {
-                Console.WriteLine($"An error occurred: {e.Message}");
-            }
-            finally
-            {
-                Console.WriteLine("Press any key to exit.");
-                Console.ReadKey();
+                Console.WriteLine(error.Exception.Message);
             }
         }
+        else
+        {
+            Console.WriteLine("Commands executed successfully.");
+        }
+    }
+
+    static void PromptToExit()
+    {
+        Console.WriteLine("Press any key to exit.");
+        Console.ReadKey();
     }
 }

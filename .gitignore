@@ -5,3 +5,10 @@
 .vs/DHCP Balancer/v17/.futdcache.v2
 .vs/DHCP Balancer/v17/.suo
 .vs/ProjectEvaluation/dhcp balancer.metadata.v7.bin
+DHCP Balancer/Properties/PublishProfiles/FolderProfile.pubxml.user
+DHCP Balancer/obj/Release/net8.0/refint/DHCP Balancer.dll
+DHCP Balancer/obj/Release/net8.0/ref/DHCP Balancer.dll
+.vs/DHCP Balancer/FileContentIndex/bff25e3e-8364-427f-b984-75d113504e76.vsidx
+DHCP Balancer/bin/Release/net8.0/appsettings.json
+*.cs
+DHCP Balancer/obj/Release/net8.0/DHCP Balancer.csproj.FileListAbsolute.txt

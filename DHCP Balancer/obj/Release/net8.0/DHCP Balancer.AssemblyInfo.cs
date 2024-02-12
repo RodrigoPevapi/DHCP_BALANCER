@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DHCP Balancer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+62acb5cbdbc2ee8612846da2e9a857e4bdb08892")]
 [assembly: System.Reflection.AssemblyProductAttribute("DHCP Balancer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DHCP Balancer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
