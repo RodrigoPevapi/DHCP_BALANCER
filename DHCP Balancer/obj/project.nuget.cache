@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "m2D2L4nTLqdPoQZxy6qqXsrTXRTGGq2ySRQvz4swKgpocXUXcvwKbursoeLYsSrRqHnRc4BqZlgaqW/89Q/r5Q==",
+  "dgSpecHash": "bmLdFw9OwFfn/yDfjzjOZr6W4rGhAp62QwFJjn2GW8lf+0mG+DKfwuwUQFKMpaIaTIZC1fVRS1xb9d43u3tv0A==",
   "success": true,
   "projectFilePath": "C:\\Users\\Rodrigo\\Documents\\GitHub\\DHCP_BALANCER\\DHCP Balancer\\DHCP Balancer.csproj",
   "expectedPackageFiles": [
@@ -28,6 +28,8 @@
     "C:\\Users\\Rodrigo\\.nuget\\packages\\microsoft.management.infrastructure.cimcmdlets\\7.4.1\\microsoft.management.infrastructure.cimcmdlets.7.4.1.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\microsoft.management.infrastructure.runtime.unix\\3.0.0\\microsoft.management.infrastructure.runtime.unix.3.0.0.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\3.0.0\\microsoft.management.infrastructure.runtime.win.3.0.0.nupkg.sha512",
+    "C:\\Users\\Rodrigo\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Rodrigo\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\microsoft.powershell.commands.diagnostics\\7.4.1\\microsoft.powershell.commands.diagnostics.7.4.1.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\microsoft.powershell.commands.management\\7.4.1\\microsoft.powershell.commands.management.7.4.1.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\microsoft.powershell.commands.utility\\7.4.1\\microsoft.powershell.commands.utility.7.4.1.nupkg.sha512",
@@ -81,6 +83,7 @@
     "C:\\Users\\Rodrigo\\.nuget\\packages\\system.reflection.context\\8.0.0\\system.reflection.context.8.0.0.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\system.reflection.dispatchproxy\\4.7.1\\system.reflection.dispatchproxy.4.7.1.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\system.reflection.metadata\\7.0.0\\system.reflection.metadata.7.0.0.nupkg.sha512",
+    "C:\\Users\\Rodrigo\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\system.runtime.caching\\8.0.0\\system.runtime.caching.8.0.0.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\system.security.accesscontrol\\6.0.0\\system.security.accesscontrol.6.0.0.nupkg.sha512",
@@ -101,6 +104,7 @@
     "C:\\Users\\Rodrigo\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\system.threading.accesscontrol\\8.0.0\\system.threading.accesscontrol.8.0.0.nupkg.sha512",
+    "C:\\Users\\Rodrigo\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\system.web.services.description\\4.10.3\\system.web.services.description.4.10.3.nupkg.sha512",
     "C:\\Users\\Rodrigo\\.nuget\\packages\\system.windows.extensions\\8.0.0\\system.windows.extensions.8.0.0.nupkg.sha512"
   ],

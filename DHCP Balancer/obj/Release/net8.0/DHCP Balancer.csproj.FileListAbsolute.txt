@@ -576,7 +576,6 @@ C:\Users\Rodrigo\Documents\GitHub\DHCP_BALANCER\DHCP Balancer\bin\Release\net8.0
 C:\Users\Rodrigo\Documents\GitHub\DHCP_BALANCER\DHCP Balancer\bin\Release\net8.0\runtimes\win\lib\net8.0\Modules\PSDiagnostics\PSDiagnostics.psd1
 C:\Users\Rodrigo\Documents\GitHub\DHCP_BALANCER\DHCP Balancer\bin\Release\net8.0\runtimes\win\lib\net8.0\Modules\PSDiagnostics\PSDiagnostics.psm1
 C:\Users\Rodrigo\Documents\GitHub\DHCP_BALANCER\DHCP Balancer\bin\Release\net8.0\DHCP Balancer.exe
-C:\Users\Rodrigo\Documents\GitHub\DHCP_BALANCER\DHCP Balancer\bin\Release\net8.0\appsettings.json
 C:\Users\Rodrigo\Documents\GitHub\DHCP_BALANCER\DHCP Balancer\bin\Release\net8.0\DHCP Balancer.deps.json
 C:\Users\Rodrigo\Documents\GitHub\DHCP_BALANCER\DHCP Balancer\bin\Release\net8.0\DHCP Balancer.runtimeconfig.json
 C:\Users\Rodrigo\Documents\GitHub\DHCP_BALANCER\DHCP Balancer\bin\Release\net8.0\DHCP Balancer.dll
@@ -791,3 +790,6 @@ C:\Users\Rodrigo\Documents\GitHub\DHCP_BALANCER\DHCP Balancer\obj\Release\net8.0
 C:\Users\Rodrigo\Documents\GitHub\DHCP_BALANCER\DHCP Balancer\obj\Release\net8.0\DHCP Balancer.pdb
 C:\Users\Rodrigo\Documents\GitHub\DHCP_BALANCER\DHCP Balancer\obj\Release\net8.0\DHCP Balancer.genruntimeconfig.cache
 C:\Users\Rodrigo\Documents\GitHub\DHCP_BALANCER\DHCP Balancer\obj\Release\net8.0\ref\DHCP Balancer.dll
+C:\Users\Rodrigo\Documents\GitHub\DHCP_BALANCER\DHCP Balancer\bin\Release\net8.0\appsettings_reservations.json
+C:\Users\Rodrigo\Documents\GitHub\DHCP_BALANCER\DHCP Balancer\bin\Release\net8.0\appsettings_scopes1.json
+C:\Users\Rodrigo\Documents\GitHub\DHCP_BALANCER\DHCP Balancer\bin\Release\net8.0\appsettings_scopes2.json

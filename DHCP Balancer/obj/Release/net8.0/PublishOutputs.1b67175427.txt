@@ -1,4 +1,6 @@
-C:\Users\Rodrigo\Desktop\DHCP balancer\appsettings.json
+C:\Users\Rodrigo\Desktop\DHCP balancer\appsettings_reservations.json
+C:\Users\Rodrigo\Desktop\DHCP balancer\appsettings_scopes1.json
+C:\Users\Rodrigo\Desktop\DHCP balancer\appsettings_scopes2.json
 C:\Users\Rodrigo\Desktop\DHCP balancer\DHCP Balancer.exe
 C:\Users\Rodrigo\Desktop\DHCP balancer\ref\Microsoft.CSharp.dll
 C:\Users\Rodrigo\Desktop\DHCP balancer\ref\Microsoft.VisualBasic.Core.dll
